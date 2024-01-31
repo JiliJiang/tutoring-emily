@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f2f1; 
+    color: #333333; 
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #0abab5; 
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+
+/* .login-container {
+    display: flex;
+    width: 100%;
+    min-height: 42em;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+} */
+
+.navbar a {
+    color: #ffffff; 
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    color: #e0f2f1; 
+    text-decoration: underline; 
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    padding: 0 10px;
+}
+
+.navbar-bottom {
+    width: 100%;
+    height: 0%;
+    background-color: #0abab5;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Adjusts navigation for mobile viewing */
+    }
+
+    .navbar a {
+        margin: 0 5px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: start;
+    }
+}

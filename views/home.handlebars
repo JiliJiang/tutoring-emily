@@ -1,0 +1,9 @@
+
+    <h1 class="welcome">Welcome to Ratatoullie!</h1>
+<div class="recipe-center">
+    <div class="menu-container">
+        {{#each recipes as |recipe|}}
+        {{> recipeCard recipe }}
+        {{/each}}
+    </div>
+</div>

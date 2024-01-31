@@ -1,0 +1,25 @@
+<div class="recipe-card">
+    <div class="card-header">
+        <h2>{{recipe.title}}</h2>
+        <h6>Posted by {{recipe.user.name}} </h6>
+    </div>
+    <div class="card-body">
+        <img src="{{recipe.image}}" alt="{{recipe.author}}">
+
+        <h6>Instructions</h6>
+        <p>{{recipe.instructions}}</p>
+
+        <h6>Ingredients</h6>
+        <p>{{recipe.ingredients}}</p>
+    </div>
+    <div class="card-body comment">
+        {{#if recipe.comments.length}}
+        {{> comments recipe.comments}}
+        {{/if}}
+    </div>
+</div>
+
+<input type="hidden" name="recipe-id" value="{{Recipe.id}}" />
+
+
+<script src="./public/js/comments.js"></script>

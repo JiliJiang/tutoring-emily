@@ -1,0 +1,51 @@
+
+<div class="edit-recipe-container">
+  <h5 class="header-color">
+    Add Recipe
+  </h5>
+  <form id="myForm" class="add-recipe-form">
+     <label for="author">
+      Author:
+    </label>
+    <br/>
+    <textarea id="author" name="author"  >
+      {{author}}
+    </textarea>
+    <br />
+    <label for="title">
+      Recipe Name:
+    </label>
+    <br />
+    <textarea id="title" name="title" >
+      {{title}}
+    </textarea>
+    <br />
+    <label for="instructions">
+      Instructions:
+    </label>
+     <br />
+    <textarea id="instructions" name="instructions"rows="4" cols="40">
+      {{instructions}}
+    </textarea>
+    <br />
+     <label for="title">
+      Ingredients:
+    </label>
+    <br />
+    <textarea id="ingredients" name="ingredients" rows="3" col="40" >
+      {{ingredients}}
+    </textarea>
+    <br />
+     <label for="image">
+      Image:
+    </label>
+     <br />
+    <textarea id="image" name="image">
+      {{image}}
+    </textarea>
+<br/>
+  <button id="post-button" type="submit" value="Submit">
+        Submit
+      </button>
+    </form>
+<script src="../js/add-recipe.js"></script>
